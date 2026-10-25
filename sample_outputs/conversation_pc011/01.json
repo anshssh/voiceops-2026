@@ -1,0 +1,11 @@
+{
+  "input": "01.txt",
+  "transcript": "Hi, my order hasnt arrived yet. Where is it?",
+  "reply": "Hello, I'm ZentroMart's AI support assistant. Could you please share your order ID so I can help?",
+  "decision": "clarify",
+  "evidence": [
+    "STY-1"
+  ],
+  "tool_calls": [],
+  "audio_file": null
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "input": "q1_refund_card.txt",
+    "transcript": "My refund to credit card was started on 17 October 2026. By which date should I have it?",
+    "reply": "Your refund should arrive between 24 October 2026 and 27 October 2026. It takes 5 to 7 business days; Sundays and warehouse holidays are not counted.",
+    "decision": "answer",
+    "evidence": [
+      "REF-2",
+      "KB-00.3"
+    ],
+    "tool_calls": [],
+    "audio_file": null
+  },
+  {
+    "input": "q2_asr_sku.txt",
+    "transcript": "sku ele-zero zero one to pe zentromart assured hai kya claim kaise karein",
+    "reply": "Kestrel K7 Smartphone 128 GB, Beige par 12 mahine ki ZentroMart Assured warranty aur 12 mahine ki brand warranty hai. Claim app mein My Orders se karein.",
+    "decision": "answer",
+    "evidence": [
+      "WAR-1",
+      "WAR-2",
+      "products.csv:ELE-0012"
+    ],
+    "tool_calls": [],
+    "audio_file": null
+  },
+  {
+    "input": "q3_unknown.txt",
+    "transcript": "Can I schedule a delivery at midnight?",
+    "reply": "Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+    "decision": "answer",
+    "evidence": [],
+    "tool_calls": [],
+    "audio_file": null
+  }
+]

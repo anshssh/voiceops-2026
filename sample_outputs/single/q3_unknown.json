@@ -1,0 +1,9 @@
+{
+  "input": "q3_unknown.txt",
+  "transcript": "Can I schedule a delivery at midnight?",
+  "reply": "Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+  "decision": "answer",
+  "evidence": [],
+  "tool_calls": [],
+  "audio_file": null
+}

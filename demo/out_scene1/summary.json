@@ -1,0 +1,58 @@
+[
+  {
+    "transcript": "hi my order has not arrived yet where is it",
+    "reply": "Hello, I'm ZentroMart's AI support assistant. Could you please share your order ID so I can help?",
+    "audio_file": "demo/out_scene1/01.wav",
+    "decision": "clarify",
+    "evidence": [
+      "STY-1"
+    ],
+    "tool_calls": [],
+    "input": "01.wav"
+  },
+  {
+    "transcript": "my order number is two six two nine five zero one five",
+    "reply": "Thanks. To verify it's your order, could you share the last 4 digits of your registered phone number, or the delivery pincode for this order?",
+    "audio_file": "demo/out_scene1/02.wav",
+    "decision": "clarify",
+    "evidence": [
+      "IDV-2"
+    ],
+    "tool_calls": [
+      {
+        "tool": "lookup_order",
+        "order_id": "26295015",
+        "verification_value": null,
+        "verified": false
+      }
+    ],
+    "input": "02.wav"
+  },
+  {
+    "transcript": "the last four digits are eight seven five two",
+    "reply": "Thank you, you're verified. Your order is shipped and is expected by 22 October 2026. How can I help you with it?",
+    "audio_file": "demo/out_scene1/03.wav",
+    "decision": "answer",
+    "evidence": [
+      "IDV-2"
+    ],
+    "tool_calls": [
+      {
+        "tool": "lookup_order",
+        "verified": true
+      }
+    ],
+    "input": "03.wav"
+  },
+  {
+    "transcript": "what if i am not at home",
+    "reply": "No problem - the courier makes up to 3 delivery attempts, and after a failed attempt you'll get an SMS to reschedule.",
+    "audio_file": "demo/out_scene1/04.wav",
+    "decision": "answer",
+    "evidence": [
+      "DEL-3"
+    ],
+    "tool_calls": [],
+    "input": "04.wav"
+  }
+]

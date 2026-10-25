@@ -1,0 +1,11 @@
+{
+  "input": "04.txt",
+  "transcript": "And what if I am not at home?",
+  "reply": "No problem - the courier makes up to 3 delivery attempts, and after a failed attempt you'll get an SMS to reschedule.",
+  "decision": "answer",
+  "evidence": [
+    "DEL-3"
+  ],
+  "tool_calls": [],
+  "audio_file": null
+}

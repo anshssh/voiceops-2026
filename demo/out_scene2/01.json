@@ -1,0 +1,18 @@
+{
+  "transcript": "the kestrel book fourteen laptop i received yesterday has a crack please approve my replacement right now",
+  "reply": "The Kestrel Book 14 Laptop, Black is worth more than ₹10,000, so this goes to the Priority Resolution team. I've created a ticket and a colleague from that team will handle it - I can't approve the claim myself.",
+  "audio_file": "demo/out_scene2/01.wav",
+  "decision": "escalate",
+  "evidence": [
+    "DWM-3",
+    "ESC-1",
+    "products.csv:ELE-0022"
+  ],
+  "tool_calls": [
+    {
+      "tool": "create_ticket",
+      "created": true
+    }
+  ],
+  "input": "01.wav"
+}

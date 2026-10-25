@@ -1,0 +1,13 @@
+{
+  "input": "q2_asr_sku.txt",
+  "transcript": "sku ele-zero zero one to pe zentromart assured hai kya claim kaise karein",
+  "reply": "Kestrel K7 Smartphone 128 GB, Beige par 12 mahine ki ZentroMart Assured warranty aur 12 mahine ki brand warranty hai. Claim app mein My Orders se karein.",
+  "decision": "answer",
+  "evidence": [
+    "WAR-1",
+    "WAR-2",
+    "products.csv:ELE-0012"
+  ],
+  "tool_calls": [],
+  "audio_file": null
+}

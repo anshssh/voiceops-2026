@@ -1,0 +1,3 @@
+# The agent core is pure Python 3.10+ standard library - no other deps.
+# Voice (Step 4) needs Gnani's official SDK only:
+gnani-vachana

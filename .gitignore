@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+# dataset is provided separately by the organisers - never commit it
+Capstone_Project_Dataset_FTTT_2026/
+dataset/
+tickets_created.csv

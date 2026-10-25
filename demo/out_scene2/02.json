@@ -1,0 +1,9 @@
+{
+  "transcript": "can i schedule a delivery at midnight",
+  "reply": "Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+  "audio_file": "demo/out_scene2/02.wav",
+  "decision": "answer",
+  "evidence": [],
+  "tool_calls": [],
+  "input": "02.wav"
+}

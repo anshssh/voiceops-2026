@@ -1,0 +1,18 @@
+{
+  "input": "02.txt",
+  "transcript": "The order number is 2629 5015.",
+  "reply": "Thanks. To verify it's your order, could you share the last 4 digits of your registered phone number, or the delivery pincode for this order?",
+  "decision": "clarify",
+  "evidence": [
+    "IDV-2"
+  ],
+  "tool_calls": [
+    {
+      "tool": "lookup_order",
+      "order_id": "26295015",
+      "verification_value": null,
+      "verified": false
+    }
+  ],
+  "audio_file": null
+}

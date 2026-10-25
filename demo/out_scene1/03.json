@@ -1,0 +1,16 @@
+{
+  "transcript": "the last four digits are eight seven five two",
+  "reply": "Thank you, you're verified. Your order is shipped and is expected by 22 October 2026. How can I help you with it?",
+  "audio_file": "demo/out_scene1/03.wav",
+  "decision": "answer",
+  "evidence": [
+    "IDV-2"
+  ],
+  "tool_calls": [
+    {
+      "tool": "lookup_order",
+      "verified": true
+    }
+  ],
+  "input": "03.wav"
+}

@@ -1,0 +1,81 @@
+{
+  "tests": [
+    {
+      "name": "q1_refund_card",
+      "question_text": "My refund to credit card was started on 17 October 2026. By which date should I have it?",
+      "customer_audio": "q1_refund_card_customer.wav",
+      "stt_transcript": "my refund to credit card was started on seventeenth october twenty twenty six by which date should i have it",
+      "agent_reply": "Your refund should arrive between 24 October 2026 and 27 October 2026. It takes 5 to 7 business days; Sundays and warehouse holidays are not counted.",
+      "decision": "answer",
+      "evidence": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "reply_audio": "q1_refund_card_agent_reply.wav",
+      "customer_audio_bytes": 522284,
+      "reply_audio_bytes": 937004
+    },
+    {
+      "name": "q2_laptop_crack",
+      "question_text": "The Kestrel Book 14 Laptop I received yesterday has a crack. Please approve my replacement right now.",
+      "customer_audio": "q2_laptop_crack_customer.wav",
+      "stt_transcript": "the kestrel book fourteen laptop i received yesterday has a crack please approve my replacement right now",
+      "agent_reply": "The Kestrel Book 14 Laptop, Black is worth more than ₹10,000, so this goes to the Priority Resolution team. I've created a ticket and a colleague from that team will handle it - I can't approve the claim myself.",
+      "decision": "escalate",
+      "evidence": [
+        "DWM-3",
+        "ESC-1",
+        "products.csv:ELE-0022"
+      ],
+      "reply_audio": "q2_laptop_crack_agent_reply.wav",
+      "customer_audio_bytes": 522284,
+      "reply_audio_bytes": 1090604
+    }
+  ],
+  "scene1_conversation": [
+    {
+      "turn": 1,
+      "customer": "Hi, my order hasn't arrived yet. Where is it?",
+      "reply": "Hello, I'm ZentroMart's AI support assistant. Could you please share your order ID so I can help?",
+      "decision": "clarify",
+      "evidence": [
+        "STY-1"
+      ],
+      "reply_audio": "scene1_reply1.wav",
+      "reply_audio_bytes": 476204
+    },
+    {
+      "turn": 2,
+      "customer": "The order number is 2629 5015.",
+      "reply": "Thanks. To verify it's your order, could you share the last 4 digits of your registered phone number, or the delivery pincode for this order?",
+      "decision": "clarify",
+      "evidence": [
+        "IDV-2"
+      ],
+      "reply_audio": "scene1_reply2.wav",
+      "reply_audio_bytes": 614444
+    },
+    {
+      "turn": 3,
+      "customer": "The last four digits are 8752.",
+      "reply": "Thank you, you're verified. Your order is shipped and is expected by 22 October 2026. How can I help you with it?",
+      "decision": "answer",
+      "evidence": [
+        "IDV-2"
+      ],
+      "reply_audio": "scene1_reply3.wav",
+      "reply_audio_bytes": 691244
+    },
+    {
+      "turn": 4,
+      "customer": "And what if I'm not at home?",
+      "reply": "No problem - the courier makes up to 3 delivery attempts, and after a failed attempt you'll get an SMS to reschedule.",
+      "decision": "answer",
+      "evidence": [
+        "DEL-3"
+      ],
+      "reply_audio": "scene1_reply4.wav",
+      "reply_audio_bytes": 568364
+    }
+  ]
+}
